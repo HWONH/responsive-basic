@@ -388,3 +388,49 @@ font-size: 0;을 준 이유
     /* .txt_03{display: none;} */
     /* .txt_04{display: block;} */
 }
+/* ---------------------------------------------------- */
+/* .ex_07{
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+.ex_07 div{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 20px);
+    height: 300px;
+    margin: 10px;
+}
+.ex_07 .box1{background: red;}
+.ex_07 .box2{background: green;}
+.ex_07 .box3{background: blue;}
+.ex_07 .box4{background: yellow;}
+@media (min-width:768px){
+    .ex_07 div{width: calc(50% - 20px);}
+}
+@media (min-width:1024px){
+    .ex_07 div{width: calc(25% - 20px);}
+} */
+
+.ex_07{
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+.ex_07 div{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 10px;
+}
+.ex_07 .box1{background: red;}
+.ex_07 .box2{background: green;}
+.ex_07 .box3{background: blue;}
+.ex_07 .box4{background: yellow;}
+@media (max-width:1023px){
+    .ex_07 div{width: calc(50% - 20px);}
+}
+@media (max-width:767px){
+    .ex_07 div{width: calc(100% - 20px);}
+}
