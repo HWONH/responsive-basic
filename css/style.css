@@ -293,3 +293,22 @@ font-size: 0;을 준 이유
         height: 100px;
     }
 }
+/* ---------------------------------------------------- */
+.ex_05{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background: #35aa99;
+    color: #ffffff;
+    text-align: center;
+}
+.ex_05 h3{
+    font-size: 24px;
+}
+@media (max-width:1023px){
+    .res_1023_none{display: none;}
+}
+@media (max-width:767px){
+    .res_767_none{display: none;}
+    .ex_05 h3{font-size: 18px;}
+}
