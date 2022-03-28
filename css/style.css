@@ -109,3 +109,16 @@ font-size: 0;을 준 이유
         width: calc(100% - 20px);
     }
 }
+/* ---------------------------------------------------- */
+ /* p[class^='c'] c로 시작하는 클래스명을 가진 p태그 */
+ .attribute_selector p[class^='c']{
+    color: red;
+}
+ /* p[class$='le'] le로 끝나는 클래스명을 가진 p태그 */
+.attribute_selector p[class$='le']{
+    font-size: 36px;
+}
+ /* p[class*='cl'] cl이 포함된 클래스명을 가진 p태그 */
+.attribute_selector p[class*='cl']{
+    font-style: italic;
+}
