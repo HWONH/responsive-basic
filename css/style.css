@@ -434,3 +434,65 @@ font-size: 0;을 준 이유
 @media (max-width:767px){
     .ex_07 div{width: calc(100% - 20px);}
 }
+/* ---------------------------------------------------- */
+.ex_08{
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    background: #dddddd;
+    font-size: 12px;
+    text-align: center;
+}
+.ex_08 header{
+    padding: 10px;
+    background: #aaffff;
+}
+.ex_08 header p{
+    font-size: 1.5em;
+    color: #474747;
+    line-height: 1;
+}
+.ex_08 section{
+    padding: 20px 0;
+    background: #ffaaff;
+    font-size: 0;
+}
+.ex_08 section > div{
+    width: calc(100% / 3);
+    height: 250px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.ex_08 section > div > article{
+    height: 100%;
+    padding: 10px;
+    background: #ffffaa;
+    font-size: 1.4rem;
+}
+
+.ex_08 aside{
+    padding: 10px;
+    background: #aaffaa;
+}
+.ex_08 aside p{
+    font-size: 1.25rem;
+}
+.ex_08 footer{
+    padding: 10px;
+    background: #aaaaaa;
+}
+.ex_08 footer p{
+    font-size: 1.5rem;
+}
+@media (max-width:960px){
+    .ex_08{width: 100%;}
+}
+@media (max-width:767px){
+    .ex_08 section > div{width: 50%;}
+    .ex_08 section > div:last-child{display: none;}
+}
+@media (max-width:480px){
+    .ex_08 section > div{width: 100%;padding-bottom: 10px;}
+    .ex_08 section > div:last-child{display: inline-block;padding-bottom: 0;}
+}
