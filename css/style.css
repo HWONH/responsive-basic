@@ -240,3 +240,56 @@ font-size: 0;을 준 이유
 @media (min-width:768px){
     .ex_03 .bx div{height: 400px;}
 }
+/* ---------------------------------------------------- */
+/* float */
+/* .ex_04{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: #aaffaa;
+}
+.ex_04:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.ex_04 .bx{
+    float: left;
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 0 10px;
+    background: #12ee12;
+} */
+
+/* inline-block */
+.ex_04{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: #aaffaa;
+    font-size: 0;
+    text-align: center;
+}
+.ex_04 .bx{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 0 10px;
+    background: #12ee12;
+}
+@media (max-width:1023px){
+    .ex_04 .bx{
+        height: 400px;
+    }
+}
+@media (max-width:767px){
+    .ex_04 .bx{
+        height: 200px;
+    }
+}
+@media (max-width:639px){
+    .ex_04 .bx{
+        height: 100px;
+    }
+}
