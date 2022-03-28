@@ -122,3 +122,97 @@ font-size: 0;을 준 이유
 .attribute_selector p[class*='cl']{
     font-style: italic;
 }
+/* ---------------------------------------------------- */
+.max_box{
+    width: 300px;
+    height: 300px;
+    background: red; /* 1025~ red */
+}
+@media (max-width:1024px){
+    .max_box{background: yellow;} /* 769~1024 yellow */
+}
+@media (max-width:768px){
+    .max_box{background: green;} /* 569~768 green */
+}
+@media (max-width:568px){
+    .max_box{background: blue;} /* 0~568 blue */
+}
+
+.min_box{
+    width: 300px;
+    height: 300px;
+    background: blue; /* 0~567 blue */
+}
+@media (min-width:568px){
+    .min_box{background: green;} /* 568~767 green */
+}
+@media (min-width:768px){
+    .min_box{background: yellow;} /* 768~1023 yellow */
+}
+@media (min-width:1024px){
+    .min_box{background: red;} /* 1024~ red */
+}
+/* ---------------------------------------------------- */
+.max_box2{
+    width: 300px;
+    height: 300px;
+    background: #ee3535; /* 1024~ #ee3535 */
+}
+@media (max-width:1023px){
+    .max_box2{background: #ffaa00;} /* 768~1023 #ffaa00 */
+}
+@media (max-width:767px){
+    .max_box2{background: #00aaff;} /* 640~767 #00aaff */
+}
+@media (max-width:639px){
+    .max_box2{background: #aa00ff;} /* 0~639 #aa00ff */
+}
+.min_box2{
+    width: 300px;
+    height: 300px;
+    background: #aa00ff; /* 0~639 #aa00ff */
+}
+@media (min-width:640px){
+    .min_box2{background: #00aaff;} /* 640~767 #00aaff */
+}
+@media (min-width:768px){
+    .min_box2{background: #ffaa00;} /* 768~1023 #ffaa00 */
+}
+@media (min-width:1024px){
+    .min_box2{background: #ee3535;} /* 1024~ #ee3535 */
+}
+/* ---------------------------------------------------- */
+.max_box3{
+    width: 600px;
+    height: 400px;
+    background: #ff9900;
+}
+@media (max-width:1023px){
+    .max_box3{width: 400px;height: 200px;}
+}
+@media (max-width:767px){
+    .max_box3{width: 300px;height: 300px;}
+}
+@media (max-width:639px){
+    .max_box3{width: 200px;height: 200px;}
+}
+@media (max-width:319px){
+    .max_box3{width: 300px;height: 300px;}
+}
+.min_box3{
+    width: 300px;
+    height: 300px;
+    background: #ff9900;
+}
+@media (min-width:320px){
+    .min_box3{width: 200px;height: 200px;}
+}
+@media (min-width:640px){
+    .min_box3{width: 300px;height: 300px;}
+}
+@media (min-width:768px){
+    .min_box3{width: 400px;height: 200px;}
+}
+@media (min-width:1024px){
+    .min_box3{width: 600px;height: 400px;}
+}
