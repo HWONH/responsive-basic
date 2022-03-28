@@ -216,3 +216,27 @@ font-size: 0;을 준 이유
 @media (min-width:1024px){
     .min_box3{width: 600px;height: 400px;}
 }
+/* ---------------------------------------------------- */
+/* inline-block(아래와 Markup이 달라!) */
+.ex_03{font-size: 0;}
+.ex_03 .bx{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 20px);
+    height: auto;
+    padding: 10px;
+}
+.ex_03 .bx div{
+    width: 100%;
+    height: 300px;
+    background: #aaaaff;
+}
+@media (min-width:320px){
+    .ex_03 .bx div{height: 100px;}
+}
+@media (min-width:640px){
+    .ex_03 .bx div{height: 200px;}
+}
+@media (min-width:768px){
+    .ex_03 .bx div{height: 400px;}
+}
